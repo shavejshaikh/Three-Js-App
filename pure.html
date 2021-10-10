@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <canvas>
+
+        <script>
+            var context = document.querySelector("canvas").getContext("2d");
+
+            function loop() {
+
+                window.requestAnimationFrame(loop);
+
+                var height = document.documentElement.clientHeight;
+                var width = document.documentElement.clientWidth;
+
+                context.canvas.height = height;
+                context.canvas.width = width;
+
+                context.fillStyle = "#008000";
+                context.fillRect(0, 0, width, height);
+            }
+        </script>
+    </canvas>
+</body>
+
+</html>
